@@ -70,16 +70,18 @@ a.fab {
 #intro-section {
     height: 800px;
     background-image: url(./images/dough-roll.jpg);
+    background-position: center;
     background-size: cover;
 }
 #text-span {
-    height: 300px;
+    height: 45%;
     display: flex;
     flex-flow: row wrap;
     flex: auto;
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    padding: 0px 10px;
 }
 #text-span > h2 {
     font-size: 40px;
@@ -136,7 +138,7 @@ h3.description {
 
 /* Bottom */
 footer {
-    height: 40vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -168,6 +170,53 @@ nav.footer-list {
 #signature {
     text-align: center;
     position: relative;
-    top: 70px;
+    top: 15%;
     font-size: 20px;
+}
+
+@media (max-width: 750px) {
+
+    /* Header */
+    header nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    span#header-nav-links {
+        width: 80%;
+    }
+    #header-nav-icons {
+        visibility: hidden;
+    }
+    header > h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    /* Main */
+    #text-span {
+        padding: 30px 10px;
+    }
+    h2.main-text {
+        margin-bottom: 20px;
+    }
+
+    /* Bottom */
+    #bottom-section {
+        height: 1000px;
+        flex-flow: column-reverse nowrap;
+        justify-content: space-evenly;
+    }
+    #bottom-image {
+        height: 400px;
+        width: 300px;
+    }
+    #final-cta {
+        width: 80%;
+        height: 30%;
+    }
+    /* Footer */
+
 }

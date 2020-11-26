@@ -6,9 +6,7 @@
     text-decoration: none;
     margin: unset;
     font-weight: 300;
-}
-main {
-    /*background-color: salmon;*/
+    font-size: 23px;
 }
 
 /* Header */
@@ -20,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     font-size: 30px;
 }
 nav, #header-nav-links {
@@ -56,15 +54,15 @@ header > h3 {
     margin-bottom: 30px;
 }
 a.fab {
-    font-size: 28px;
+    font-size: 30px;
 }
 .cta {
     background-color: #CAE4C1;
     color: black;
-    height: 40px;
-    width: 120px;
+    height: 60px;
+    width: 200px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 25px;
     border: none;
 }
 
@@ -128,10 +126,48 @@ a.fab {
 h3.description {
     width: 70%;
 }
-#footer-button {
+#bottom-button {
     font-size: 24px;
     height: 50px;
     width: 200px;
     background-color: black;
     color: white;
+}
+
+/* Bottom */
+footer {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #8C8C8C;
+    color: white;
+}
+.footer-list {
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+}
+nav.footer-list {
+    width: 300px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+#footer-links {
+    width: 150px;
+    justify-content: space-between;
+    font-size: 35px;
+}
+#footer-links a {
+    font-size: inherit;
+}
+#signature {
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
 }

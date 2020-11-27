@@ -11,7 +11,6 @@
 
 /* Header */
 header {
-    background-image: url(./images/header-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -21,7 +20,13 @@ header {
     height: 100vh;
     font-size: 30px;
 }
-nav, #header-nav-links {
+#home-hero {
+    background-image: url(./images/homepage-hero.jpg);
+}
+#about-hero {
+    background-image: url(./images/about-hero.jpg);
+}
+nav, .header-nav-links {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -33,10 +38,10 @@ header > nav {
     position: absolute;
     top: 20px;
 }
-#header-nav-links {
+.header-nav-links {
     width: 50%;
 }
-#header-nav-icons > a.fa-instagram {
+.header-nav-icons > a.fa-instagram {
     padding-right: 10px;
 }
 nav > h1 {
@@ -98,19 +103,25 @@ a.fab {
 }
 
 /* Bottom */
-#bottom-section {
+.cta-section {
     height: 700px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
-#bottom-image {
-    background-image: url(./images/starcookies.jpg);
+.section-image {
     background-size: cover;
     background-repeat: no-repeat;
     height: 510px;
     width: 400px;
+}
+#bottom-image {
+    background-image: url(./images/starcookies.jpg);
+}
+#aboutpage-image {
+    background-image: url(./images/about-bottom.jpg);
+    background-position: center;
 }
 #final-cta {
     width: 38%;
@@ -136,7 +147,7 @@ h3.description {
     color: white;
 }
 
-/* Bottom */
+/* Footer */
 footer {
     height: 25vh;
     width: 100%;
@@ -184,10 +195,10 @@ nav.footer-list {
     h1 {
         margin-bottom: 20px;
     }
-    span#header-nav-links {
+    span.header-nav-links {
         width: 80%;
     }
-    #header-nav-icons {
+    .header-nav-icons {
         visibility: hidden;
     }
     header > h2 {
@@ -204,12 +215,12 @@ nav.footer-list {
     }
 
     /* Bottom */
-    #bottom-section {
+    .cta-section {
         height: 1000px;
         flex-flow: column-reverse nowrap;
         justify-content: space-evenly;
     }
-    #bottom-image {
+    .section-image {
         height: 400px;
         width: 300px;
     }
@@ -217,6 +228,16 @@ nav.footer-list {
         width: 80%;
         height: 30%;
     }
-    /* Footer */
+    footer {
+        height: 250px;
+    }
+}
 
+@media (max-width: 400px) {
+    * {
+        font-size: 15px;
+    }
+    footer nav.footer-list {
+        width: 200px;
+    }
 }

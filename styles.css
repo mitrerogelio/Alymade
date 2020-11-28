@@ -158,7 +158,7 @@ h3.description {
 
 /* Footer */
 footer {
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -190,7 +190,7 @@ nav.footer-list {
 #signature {
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 10%;
     font-size: 20px;
 }
 

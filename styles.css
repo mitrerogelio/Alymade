@@ -6,7 +6,6 @@
     text-decoration: none;
     margin: unset;
     font-weight: 300;
-    font-size: 23px;
 }
 
 /* Header */
@@ -25,6 +24,11 @@ header {
 }
 #about-hero {
     background-image: url(./images/about-hero.jpg);
+    justify-content: center;
+    align-content: center;
+}
+a > h1 {
+    font-size: 50px;
 }
 nav, .header-nav-links {
     display: flex;
@@ -44,14 +48,16 @@ header > nav {
 .header-nav-icons > a.fa-instagram {
     padding-right: 10px;
 }
-nav > h1 {
-    font-size: 40px;
-    font-weight: 300;
-}
 header > h2 {
     font-size: 60px;
     font-weight: 300;
     margin-bottom: 15px;
+}
+#about-text {
+    width: 80%;
+    min-width: 300px;
+    padding-top: 50px;
+    margin: unset;
 }
 header > h3 {
     width: 400px;
@@ -139,6 +145,9 @@ a.fab {
 h3.description {
     width: 70%;
 }
+#about-bottom-text {
+    font-size: 30px;
+}
 #bottom-button {
     font-size: 24px;
     height: 50px;
@@ -205,6 +214,9 @@ nav.footer-list {
         font-size: 50px;
         text-align: center;
     }
+    #about-text {
+        font-size: 30px;
+    }
 
     /* Main */
     #text-span {
@@ -236,6 +248,11 @@ nav.footer-list {
 @media (max-width: 400px) {
     * {
         font-size: 15px;
+        overflow: scroll;
+    }
+    #about-text {
+        min-width: unset;
+        max-height: 500px;
     }
     footer nav.footer-list {
         width: 200px;

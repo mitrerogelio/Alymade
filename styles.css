@@ -1,11 +1,27 @@
 /* Unversal */
-
 * {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    /* color: white; */
     text-decoration: none;
     margin: unset;
     font-weight: 300;
+}
+a {
+    cursor: pointer;
+}
+.cta {
+    background-color: #CAE4C1;
+    color: black;
+    height: 60px;
+    width: 200px;
+    font-weight: 400;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+.cta:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Header */
@@ -21,15 +37,21 @@ header {
 }
 #home-hero {
     background-image: url(./images/homepage-hero.jpg);
+    color: white;
 }
 #about-hero {
     background-image: url(./images/about-hero.jpg);
     justify-content: center;
     align-content: center;
+    color: white;
 }
 #gallery-hero {
-    background-color: aqua;
+    background-color: white;
     color: black;
+    height: 20vh;
+}
+#gallery-hero > nav, a, p, h1, span {
+    color: inherit;
 }
 a > h1 {
     font-size: 50px;
@@ -57,6 +79,9 @@ header > h2 {
     font-weight: 300;
     margin-bottom: 15px;
 }
+#home-hero > h2 {
+    font-size: 100px;
+}
 #about-text {
     width: 80%;
     min-width: 300px;
@@ -71,15 +96,6 @@ header > h3 {
 a.fab {
     font-size: 30px;
 }
-.cta {
-    background-color: #CAE4C1;
-    color: black;
-    height: 60px;
-    width: 200px;
-    font-weight: 400;
-    font-size: 25px;
-    border: none;
-}
 
 /* Main */
 #intro-section {
@@ -87,6 +103,72 @@ a.fab {
     background-image: url(./images/dough-roll.jpg);
     background-position: center;
     background-size: cover;
+}
+#gallery-section {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: unset;
+    text-align: center;
+}
+#gallery-section > a, p {
+    font-size: 25px;
+}
+#instafeed {
+    width: 80%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas: 
+    "tl tc tr"
+    "ml mc mr"
+    "bl bc br"
+    ;
+    row-gap: 5%;
+    justify-items: center;
+    align-items: center;
+}
+.feature {
+    width: 300px;
+    height: 300px;
+    background-color: #8C8C8C;
+}
+    /* Gallery */
+        #tl {
+            grid-area: tl;
+        }
+        #tc {
+            grid-area: tc;
+        }
+        #tr {
+            grid-area: tr;
+        }
+        #ml {
+            grid-area: ml;
+        }
+        #mc {
+            grid-area: mc;
+        }
+        #mr {
+            grid-area: mr;
+        }
+        #bl {
+            grid-area: bl;
+        }
+        #bc {
+            grid-area: bc;   
+        }
+        #br {
+            grid-area: br;
+        }
+#gallery-cta {
+    font-weight: 300;
+}
+#gallery-cta:hover {
+    background-color: black;
+    color: white;
 }
 #text-span {
     height: 45%;

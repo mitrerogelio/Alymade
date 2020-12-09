@@ -90,8 +90,7 @@ header > h2 {
 #about-text {
     width: 80%;
     min-width: 300px;
-    padding-top: 50px;
-    margin: unset;
+    margin-top: 135px;
 }
 header > h3 {
     width: 400px;
@@ -125,18 +124,49 @@ a.fab {
     text-align: center;
 }
 #contact-section {
-    height: 950px;
+    height: 1200px;
     margin: 0px 10%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
 }
-form {
-    display: flex;
-    flex-flow: column nowrap;
+#contact-instructions {
+    height: 250px;
+    font-size: 30px;
+    max-height: 300px;
+    min-width: 600px;
+    align-self: center;
 }
 #contact-instructions > p {
     margin-bottom: 20px;
+}
+form {
+    height: 60%;
+    font-size: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap: 2.5%;
+}
+input {
+    background-color: lightgray;
+    border: none;
+    height: 50px;
+}
+form > p {
+    font-size: 20px;
+}
+textarea {
+    height: 28%;
+    background-color: lightgray;
+}
+form > .cta {
+    align-self: center;
+    margin-top: 100px;
+}
+#contact-section > p {
+    text-align: center;
+    font-size: 25px;
 }
 
 /* Grid */
@@ -295,6 +325,20 @@ nav.footer-list {
         flex-flow: column nowrap;
         align-items: center;
     }
+    #top-nav {
+        height: 300px;
+    }
+    #mission {
+        margin-top: 135px;
+    }
+    #mission-description {
+        font-size: 25px;
+    }
+    #about-text {
+        font-size: 45px;
+        margin-top: 135px;
+        text-align: left;
+    }
     #gallery-hero {
         height: 30vh;
     }
@@ -310,15 +354,6 @@ nav.footer-list {
     header > h2 {
         font-size: 50px;
         text-align: center;
-    }
-    #home-hero > h2 {
-        font-size: 40px;
-    }
-    #home-hero > h3 {
-        font-size: 25px;
-    }
-    #about-text {
-        font-size: 30px;
     }
 
     /* Main */
@@ -341,6 +376,9 @@ nav.footer-list {
     .feature {
         width: 60%;
         height: 20%;
+    }
+    #contact-instructions {
+        font-size: 20px;
     }
 
     /* Bottom */

@@ -131,10 +131,7 @@ a.fab {
     justify-content: space-around;
 }
 #contact-instructions {
-    height: 250px;
     font-size: 30px;
-    max-height: 300px;
-    min-width: 600px;
     align-self: center;
 }
 #contact-instructions > p {
@@ -142,23 +139,25 @@ a.fab {
 }
 form {
     height: 60%;
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     gap: 2.5%;
+    border: 1px solid lightgray;
+    padding: 5%;
 }
 input {
     background-color: lightgray;
     border: none;
     height: 50px;
-}
-form > p {
-    font-size: 20px;
+    padding: 1%;
+    font-size: 30px;
 }
 textarea {
     height: 28%;
     background-color: lightgray;
+    border: none;
 }
 form > .cta {
     align-self: center;
@@ -167,6 +166,7 @@ form > .cta {
 #contact-section > p {
     text-align: center;
     font-size: 25px;
+    margin: 50px 0px;
 }
 
 /* Grid */
@@ -339,7 +339,7 @@ nav.footer-list {
         margin-top: 135px;
         text-align: left;
     }
-    #gallery-hero {
+    #gallery-hero, #contact-hero {
         height: 30vh;
     }
     h1 {
@@ -364,7 +364,7 @@ nav.footer-list {
         margin-bottom: 20px;
     }
     #gallery-section {
-        height: 1200px;
+        height: 2000px;
     }
     #grid-container {
         display: flex;
@@ -377,8 +377,22 @@ nav.footer-list {
         width: 60%;
         height: 20%;
     }
+    #contact-section {
+        height: 2000px;
+        margin: 10%;
+    }
     #contact-instructions {
-        font-size: 20px;
+        height: unset;
+        width: unset;
+    }
+    form {
+        gap: unset;
+    }
+    input, textarea {
+        height: 5%;
+    }
+    form > .cta {
+        margin: unset;
     }
 
     /* Bottom */
@@ -417,6 +431,9 @@ nav.footer-list {
     }
     #gallery-hero {
         height: 40vh;
+    }
+    form {
+        font-size: 2vw;
     }
     span.header-nav-links {
         flex-flow: column nowrap;

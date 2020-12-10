@@ -84,10 +84,11 @@ header > h2 {
     font-weight: 300;
     margin-bottom: 15px;
 }
-#home-hero > h2 {
+#mission {
     font-size: 85px;
 }
 #about-text {
+    font-size: 55px;
     width: 80%;
     min-width: 300px;
     margin-top: 135px;
@@ -329,18 +330,19 @@ nav.footer-list {
         height: 300px;
     }
     #mission {
+        font-size: 13vw;
         margin-top: 135px;
     }
     #mission-description {
         font-size: 25px;
     }
     #about-text {
-        font-size: 45px;
+        font-size: 7vw;
         margin-top: 135px;
         text-align: left;
     }
     #gallery-hero, #contact-hero {
-        height: 30vh;
+        height: 40vh;
     }
     h1 {
         margin-bottom: 20px;
@@ -363,6 +365,7 @@ nav.footer-list {
     h2.main-text {
         margin-bottom: 20px;
     }
+    #about-text
     #gallery-section {
         height: 2000px;
     }
@@ -388,8 +391,11 @@ nav.footer-list {
     form {
         gap: unset;
     }
-    input, textarea {
+    input {
         height: 5%;
+    }
+    textarea {
+        height: 10%;
     }
     form > .cta {
         margin: unset;
@@ -407,7 +413,7 @@ nav.footer-list {
     }
     #final-cta {
         width: 80%;
-        height: 30%;
+        height: 40%;
     }
     footer {
         height: 250px;
@@ -419,15 +425,27 @@ nav.footer-list {
         font-size: 20px;
         overflow: scroll;
     }
+    #home-hero {
+        height: 125vh;
+    }
     .header-nav-links a p {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    span.header-nav-links {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #mission {
+        margin-top: 40%;
+        font-size: 50px;
     }
     #about-text {
         min-width: unset;
         max-height: 500px;
-    }
-    footer nav.footer-list {
-        width: 60%;
+        font-size: 27px;
+        position: absolute;
+        bottom: 20px;
+        text-align: left;
     }
     #gallery-hero {
         height: 40vh;
@@ -435,8 +453,7 @@ nav.footer-list {
     form {
         font-size: 2vw;
     }
-    span.header-nav-links {
-        flex-flow: column nowrap;
-        align-items: center;
+    footer nav.footer-list {
+        width: 70%;
     }
 }

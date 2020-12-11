@@ -162,7 +162,8 @@ textarea {
 }
 form > .cta {
     align-self: center;
-    margin-top: 100px;
+    margin-top: 90px;
+    height: 85px;
 }
 #contact-section > p {
     text-align: center;

@@ -19,24 +19,32 @@
             </span>
             <span class="header-nav-icons">
               <a class="fab fa-instagram" href="https://www.instagram.com/aly.made/" target="_blank"></a>
-              <a class="fab fa-facebook-f" href="#"></a>
             </span>
         </nav>
     </header>  
     <section id="contact-section">
         <article id="contact-instructions">
             <p>Thank you for your interest in a custom cookie order!</p>
-            <p>Pick up is in Shakopee, Minnesota. An exact address will be provided on your invoice.</p>
-            <p>Please fill out the following form to the best of your ability:</p>
+            <p>Leave your message and I will get back to you shortly</p>
+            <p>Please allow 48-72 hours for a response.</p>
+            <p>Orders are pick-up only in Shakopee, MN.</p>
         </article>
         <form action="https://formspree.io/f/xwkwrraj" method="post">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name">
-                <label for="mail">Email Address:</label>
-                <input type="email" id="mail" name="user_email">
-                <label for="msg">Questions and Comments</label>
-                <p>Please use this area for any further questions and comments you may have. If you would like to provide me with any images such as an invite or inspiration photos, this can be done below.</p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name" required="required">
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="user_email" required="required">
+
+                <label for="msg">Message</label>
+                <p>Please include details about your event (colors, theme, etc).</p>
                 <textarea id="msg" name="user_message"></textarea>
+
+                <label for="event">Date of Event</label>
+                <input type="date" id="event" name="user_event" required="required">
+
+                <label for="quantity">Quantity of Cookies</label>
+                <input type="text" id="quantity" name="user_quantity" required="required">
                 <button class="cta" type="submit">submit</button>            
         </form>
         <p>Thank you for your request! I will reach out to you within 72 hours.</p>
@@ -49,8 +57,7 @@
         </nav>
         <div class="footer-list" id="footer-links">
           <a class="footer-icon fab fa-instagram" href="https://www.instagram.com/aly.made/" target="_blank"></a>
-          <a class="footer-icon fab fa-facebook-f" href="#"></a>
-          <a class="footer-icon far fa-envelope" href="mailto:alymitre@gmail.com"></a>
+          <a class="footer-icon far fa-envelope" href="mailto:alymadecookies@gmail.com"></a>
         </div>
         <p id="signature">made by<br /><a target="_blank" href="https://www.instagram.com/rogeliocodes/">@rogeliocodes</a></p>
       </footer>

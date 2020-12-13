@@ -144,19 +144,16 @@ form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    gap: 2.5%;
     border: 1px solid lightgray;
     padding: 5%;
 }
 input {
     background-color: lightgray;
     border: none;
-    height: 50px;
     padding: 1%;
     font-size: 30px;
 }
 textarea {
-    height: 28%;
     background-color: lightgray;
     border: none;
 }
@@ -284,7 +281,7 @@ h3.description {
 
 /* Footer */
 footer {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -307,7 +304,7 @@ nav.footer-list {
 }
 #footer-links {
     width: 150px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 35px;
 }
 #footer-links a {
@@ -347,6 +344,7 @@ nav.footer-list {
     }
     h1 {
         margin-bottom: 20px;
+        text-align: center;
     }
     span.header-nav-links {
         width: 80%;

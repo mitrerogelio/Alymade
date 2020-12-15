@@ -127,3 +127,32 @@
         font-size: 30px;
         align-self: center;
     }
+    form {
+        height: 60%;
+        font-size: 30px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        border: 1px solid lightgray;
+        padding: 5%;
+    }
+    input {
+        background-color: lightgray;
+        border: none;
+        padding: 1%;
+        font-size: 30px;
+    }
+    textarea {
+        background-color: lightgray;
+        border: none;
+    }
+    form > .cta {
+        align-self: center;
+        margin-top: 90px;
+        height: 85px;
+    }
+    #contact-section > p {
+        text-align: center;
+        font-size: 25px;
+        margin: 50px 0px;
+    }

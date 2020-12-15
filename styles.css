@@ -41,7 +41,7 @@ header {
     color: white;
 }
 #about-hero {
-    background-image: url(./images/about-hero.jpg);
+    background-image: url(./images/about-hero2.jpg);
     justify-content: center;
     align-content: center;
     color: white;
@@ -237,10 +237,10 @@ form > .cta {
     width: 400px;
 }
 #bottom-image {
-    background-image: url(./images/starcookies.jpg);
+    background-image: url(./images/bottom-home.jpg);
 }
 #aboutpage-image {
-    background-image: url(./images/about-bottom.jpg);
+    background-image: url(./images/about-bottom2.jpg);
     background-position: center;
 }
 #final-cta {

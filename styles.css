@@ -32,7 +32,8 @@ header {
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 40%;
     height: 100vh;
     font-size: 30px;
 }
@@ -66,14 +67,86 @@ nav, .header-nav-links {
     align-items: baseline;
     font-size: 25px;
 }
-header > nav {
-    width: 100%;
+#top-nav {
+    width: 90%;
     position: absolute;
     top: 20px;
 }
+#top-nav > span a {
+    font-size: 35px;
+}
+aside {
+    display: none;
+    position: fixed;
+    top: 30vh;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #6B726C;
+}
+aside.open {
+    display: flex;
+}
+#mobile-nav {
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    color: #6B726C;
+}
+#mobile-icons > a {
+    font-size: 45px;
+    color: inherit;
+}
+#first-icon-mobile {
+    margin-right: 20px;
+}
+#mobile-logo {
+    height: 100%;
+    width: 30%;
+    background-image: url(./images/logo-transparent.png);
+    background-size: contain;
+}
+.toggle {
+    margin-top: 3%;
+    height: 15%;
+    width: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.toggle .active:nth-child(1) {
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(2px, -2px);
+}
+.toggle .active:nth-child(2) {
+    opacity: 0;
+}
+.toggle .active:nth-child(3) {
+    transform-origin: 0 0;
+    transform: rotate(-45deg) translate(-2px, 3px);
+}
+.line {
+    height: 3px;
+    width: 100%;
+    margin: 2px 0;
+    background: #6B726C;
+    transition: all ease-in-out 0.2s;
+}
 .header-nav-links {
     width: 500px;
-    margin-right: 150px;
 }
 #mission {
     font-size: 85px;
@@ -89,7 +162,7 @@ header > nav {
     text-align: center;
     margin-bottom: 30px;
 }
-a.fab {
+a.fab, a.far {
     font-size: 30px;
 }
 
@@ -233,8 +306,8 @@ form > .cta {
 .section-image {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 510px;
-    width: 400px;
+    height: 70%;
+    width: 30%;
 }
 #bottom-image {
     background-image: url(./images/bottom-home.jpg);
@@ -242,6 +315,20 @@ form > .cta {
 #aboutpage-image {
     background-image: url(./images/about-bottom2.jpg);
     background-position: center;
+    height: auto;
+    width: 40%;
+}
+#about-section {
+    height: 2500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#about-bottom-text {
+    font-size: 1rem;
+    flex-basis: 50%;
+    height: auto;
 }
 #final-cta {
     width: 38%;
@@ -314,9 +401,20 @@ nav.footer-list {
     header nav {
         flex-flow: column nowrap;
         align-items: center;
+        width: 100%;
+        background-color: white;
+        color: black;
+        top: 0;
     }
     #top-nav {
-        height: 300px;
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: auto;
+        justify-content: space-between;
+        align-items: center;
     }
     #mission {
         font-size: 13vw;

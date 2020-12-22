@@ -7,11 +7,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/09aa9f4f86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./main.js"></script>
     <title>Alymade Cookie Co.</title>
 </head>
 <body>
   <header id="home-hero">
-    <nav class="top-nav">
+    <!-- Mobile Header -->
+    <nav id="mobile-nav">
+      <span id="mobile-icons" class="header-nav-icons">
+        <a id="first-icon-mobile" class="fab fa-instagram" href="https://www.instagram.com/aly.made/" target="_blank"></a>
+        <a class="footer-icon far fa-envelope" href="mailto:alymadecookies@gmail.com"></a>
+      </span>
+      <div id="mobile-logo"></div>
+      <span href="#" class="toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </span>
+    </nav>
+    <!-- Mobile Nav -->
+    <aside id="mobile-modal">
+      <a href="./about.html">about</a>
+      <a href="./gallery.html">gallery</a>
+      <a href="#">faq</a>
+      <a href="./contact.html"><button class="cta">order</button></a>
+    </aside>
+    <!-- Web Nav
+    <nav id="top-nav">
         <a href="#" class="title-link">Alymade<br />Cookie Co.</a>
         <span class="header-nav-links">
           <a href="./about.html"><p>about</p></a>
@@ -20,8 +42,10 @@
         </span>
         <span class="header-nav-icons">
           <a class="fab fa-instagram" href="https://www.instagram.com/aly.made/" target="_blank"></a>
+          <a class="footer-icon far fa-envelope" href="mailto:alymadecookies@gmail.com"></a>
         </span>
     </nav>
+-->
     <h2 id="mission">made to enjoy</h2>
     <h3 id="mission-description">handcrafted cookies<br />made with love</h3>
     <a href="./contact.html"><button class="cta">order now</button></a>

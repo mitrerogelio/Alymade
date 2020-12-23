@@ -451,6 +451,12 @@ nav.footer-list {
 
 @media (max-width: 750px) {
 
+    .cta {
+        height: 50px;
+        width: 180px;
+        font-size: 20px;
+    }
+
     /* Header */
     #mobile-nav {
         display: flex;
@@ -466,6 +472,14 @@ nav.footer-list {
     }
     .toggle {
         width: 7%;
+        height: 25%;
+        margin-top: 8%;
+    }
+    .active .line1 {
+        transform: rotate(-45deg) translate(-10px,8px);
+    }
+    .active .line3 {
+        transform: rotate(45deg) translate(-7px,-6px);
     }
     #home-hero {
         justify-content: center;
@@ -474,9 +488,6 @@ nav.footer-list {
         font-size: 30px;
         text-align: center;
     }
-    #intro-section {
-        height: 1000px;
-    }
     #mission {
         font-size: 50px;
         padding-top: 5vh;
@@ -484,13 +495,16 @@ nav.footer-list {
 
     /* Main */
     #text-span {
-        padding: 30px 10px;
+        padding: 10px 1%;
+    }
+    #text-span > h2 {
+        font-size: 30px;
     }
     h2.main-text {
         margin-bottom: 20px;
     }
     #about-hero > h2 {
-        font-size: 50px;
+        font-size: 25px;
     }
     #gallery-section {
         height: 2000px;
@@ -518,15 +532,19 @@ nav.footer-list {
         padding: unset;
     }
     .description {
-        font-size: 40px;
+        font-size: 30px;
     }
     .feature {
-        width: 60%;
+        width: 90%;
         height: 20%;
     }
     #contact-section {
         height: 2000px;
         padding-top: 20vh;
+        margin: unset;
+    }
+    #contact-section > p {
+        font-size: inherit;
     }
     #contact-instructions {
         height: unset;
@@ -535,7 +553,7 @@ nav.footer-list {
     }
     form, label, input, textarea {
         gap: unset;
-        font-size: 25px;
+        font-size: 20px;
     }
     input {
         height: 5%;
@@ -545,6 +563,9 @@ nav.footer-list {
     }
     form > .cta {
         margin: unset;
+        height: 4%;
+        width: 60%;
+        font-size: inherit
     }
 
     /* Bottom */
@@ -572,8 +593,14 @@ nav.footer-list {
         font-size: 20px;
         overflow: scroll;
     }
-    #home-hero {
-        height: 100vh;
+    .gallery-text {
+        font-size: inherit;
+    }
+    article > p {
+        margin: 7% 0px;
+    }
+    #mobile-icons > a {
+        font-size: 25px;
     }
     span.header-nav-links {
         flex-flow: column nowrap;
@@ -587,11 +614,8 @@ nav.footer-list {
         bottom: 20px;
         text-align: left;
     }
-    #gallery-hero {
-        height: 40vh;
-    }
-    form {
-        font-size: 2vw;
+    form, label, input, textarea {
+        font-size: inherit;
     }
     footer nav.footer-list {
         width: 70%;

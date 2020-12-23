@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/09aa9f4f86.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <title>Alymade Co. - Order</title>
-    </head>
-    <body>
-      <header id="order-hero">
-        <nav class="top-nav">
-          <a href="./index.html"><h1>Alymade<br />Cookie Co.</h1></a>
-          <span class="header-nav-links">
-            <a href="./about.html"><p>about</p></a>
-            <a href="#"><p>gallery</p></a>
-            <a href="#"><p>contact</p></a>
-          </span>
-          <span class="header-nav-icons">
-            <a class="fab fa-instagram" href="https://www.instagram.com/aly.made/"></a>
-            <a class="fab fa-facebook-f" href="#"></a>
-          </span>
-        </nav>
-      </header> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09aa9f4f86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Alymade Co. - Contact</title>
+<body>
+  <header id="contact-hero">
+    <nav id="mobile-nav">
+      <span id="mobile-icons" class="header-nav-icons">
+        <a id="first-icon-mobile" class="fab fa-instagram" href="https://www.instagram.com/alymadecookieco/"
+          target="_blank"></a>
+        <a class="footer-icon far fa-envelope" href="mailto:alymadecookies@gmail.com"></a>
+      </span>
+      <a href="./index.html" id="mobile-logo"></a>
+      <span href="#" class="toggle">
+        <div class="slice line1"></div>
+        <div class="slice line2"></div>
+        <div class="slice line3"></div>
+      </span>
+    </nav>
+    <!-- Mobile Nav -->
+    <aside id="mobile-modal">
+      <a href="./about.html">about</a>
+      <a href="./gallery.html">gallery</a>
+      <a href="./faq.html">faq</a>
+      <a href="./order.html"><button class="cta">order</button></a>
+    </aside>
+  </header>
+  <section id="contact-section">
+    <article id="contact-instructions">
+        <p>Thank you for your interest in a custom cookie order!</p>
+        <p>Custom cookies start at $4 per individual cookie or $42 a dozen.<br />
+        Leave your message and I will get back to you shortly with a quote.<br />
+        Please allow 24 - 48 hours for a response.<br />
+        Orders are pick-up only in Shakopee, MN.</p>
+    </article>
+    <form action="https://formspree.io/f/xwkwrraj" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="user_name" required="required">
 
-      <section id="order-section">
-        <article>
-            <p>Thank you for your interest in a custom cookie order!</p>
-            <p>Pick up is in Shakopee, Minnesota. An exact address will be provided on your invoice.</p>
-            <p>Please fill out the following form to the best of your ability:</p>
-            <p></p>
-        </article>
-        <main id="instafeed">
-          <article id="tl" class="feature"></article>
-          <article id="tc" class="feature"></article>
-          <article id="tr" class="feature"></article>
-          <article id="ml" class="feature"></article>
-          <article id="mc" class="feature"></article>
-          <article id="mr" class="feature"></article>
-          <article id="bl" class="feature"></article>
-          <article id="bc" class="feature"></article>
-          <article id="br" class="feature"></article>
-        </main>
-        <a href="https://www.instagram.com/aly.made/"><button id="gallery-cta" class="cta">see more</button></a>
-      </section>
-    
-      <footer>
-        <nav class="footer-list">
-          <a href="#"><p>about</p></a>
-          <a href="#"><p>gallery</p></a>
-          <a href="#"><p>contact</p></a>
-        </nav>
-        <div class="footer-list" id="footer-links">
-          <a class="footer-icon fab fa-instagram" href="https://www.instagram.com/aly.made/"></a>
-          <a class="footer-icon fab fa-facebook-f" href="#"></a>
-          <a class="footer-icon far fa-envelope" href="#"></a>
-        </div>
-        <p id="signature">made by<br />@rogeliocodes</p>
-      </footer>
+      <label for="mail">Email</label>
+      <input type="email" id="mail" name="user_email" required="required">
+
+      <label for="msg">Message (Please use this area to include details about your event: colors, theme, etc.</label>
+      <textarea id="msg" name="user_message"></textarea>
+
+      <label for="event">Date of Event</label>
+      <input type="date" id="event" name="user_event" required="required">
+
+      <label for="quantity">Quantity of Cookies</label>
+      <input type="text" id="quantity" name="user_quantity" required="required">
+
+
+      <button class="cta" type="submit">submit</button>            
+    </form>
+    <p>Thank you for your request! I will reach out to you within 24-48 hours.<br />
+    If you do not hear from me, please email me at alymadecookies@gmail.com.<br />
+    Please be sure to check your spam folder.</p>
+  </section>
+  <footer>
+    <nav class="footer-list">
+      <a href="./about.html">
+        <p>about</p>
+      </a>
+      <a href="./gallery.html">
+        <p>gallery</p>
+      </a>
+      <a href="./faq.html">
+        <p>faq</p>
+      </a>
+      <a href="./order.html">
+        <p>order</p>
+      </a>
+    </nav>
+    <div class="footer-list" id="footer-links">
+      <a class="footer-icon fab fa-instagram" href="https://www.instagram.com/alymadecookieco/" target="_blank"></a>
+      <a class="footer-icon far fa-envelope" href="mailto:alymadecookies@gmail.com"></a>
+    </div>
+    <p id="signature">made by<br /><a target="_blank" href="https://www.instagram.com/rogeliocodes/">@rogeliocodes</a></p>
+  </footer>
+<script src="./main.js"></script>
 </body>
 </html>

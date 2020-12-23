@@ -1,12 +1,7 @@
-// Old Code
-const toggleButton = document.getElementsByClassName('toggle')[0]
-const mobileNav = document.getElementsById('mobile-modal')[0]
+const toggleButton = document.querySelector('.toggle');
+const mobileNav = document.querySelector('#mobile-modal');
 
 toggleButton.addEventListener('click', () => {
   mobileNav.classList.toggle('open')
   toggleButton.classList.toggle('active')
 })
-
-// New Code
-const menuIcon = document.querySelector('.toggle');
-// const 

@@ -264,7 +264,7 @@ form > .cta {
     #top-right { grid-area: top-right;
         background-image: url("./images/top-right.jpg"); }
     #mid-right { grid-area: mid-right; 
-        background-image: url("./images/mid-right.JPG");}
+        background-image: url("./images/mid-right.jpg");}
     #bottom-right { grid-area: bottom-right;
         background-image: url("./images/bottom-right.jpg");}
     #top-left { grid-area: top-left;

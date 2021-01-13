@@ -12,8 +12,8 @@
     a {
         cursor: pointer;
     }
-    a.fab {
-        font-size: 30px;
+    a.fab, a.far {
+    font-size: 30px;
     }
     nav, .header-nav-links {
         display: flex;
@@ -55,8 +55,113 @@
         width: 500px;
         margin-right: 150px;
     }
-    .title-link {
-        font-size: 50px;
+    aside {
+    display: none;
+    position: fixed;
+    top: 20vh;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #6B726C;
+    }
+    .open {
+    display: flex;
+    }
+    #mobile-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    color: #6B726C;
+    }
+    #mobile-icons > a {
+    font-size: 40px;
+    color: inherit;
+    }
+    #first-icon-mobile {
+        margin-right: 20px;
+    }
+    #mobile-logo {
+        margin-right: 5%;
+        height: 100%;
+        width: 30%;
+        background-image: url(./images/logo-transparent.png);
+        background-size: contain;
+    }
+    .toggle {
+        margin-top: 3%;
+        height: 15%;
+        width: 3%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+    }
+    .active .line1 {     
+        transform: rotate(-45deg) translate(-11px,13px); 
+    }  
+    .active .line2 {
+        opacity: 0; 
+    }  
+    .active .line3{
+        transform: rotate(45deg) translate(-5px,-6px); 
+    }
+    .slice {
+        height: 3px;
+        width: 100%;
+        margin: 2px 0;
+        background: #6B726C;
+        transition: all ease-in-out 0.2s;
+    }
+    .header-nav-links {
+        width: 500px;
+    }
+    /* Footer Styling */
+    footer {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #8C8C8C;
+    color: white;
+    }
+    .footer-list {
+        display: flex;
+        flex-flow: row nowrap;
+        width: auto;
+    }
+    nav.footer-list {
+        width: 350px;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    #footer-links {
+        width: 150px;
+        justify-content: space-evenly;
+        font-size: 35px;
+    }
+    #footer-links a {
+        font-size: inherit;
+    }
+    #signature {
+        text-align: center;
+        position: relative;
+        top: 10%;
+        font-size: 20px;
     }
 
 /* Home */
@@ -73,16 +178,40 @@
         margin-bottom: 30px;
     }
     #intro-section {
-        height: 800px;
-        background-image: url(./images/dough-roll.jpg);
-        font-size: 22px;
+    height: 900px;
+    background-image: url(./images/intro-image.jpg);
+    background-position: top;
+    background-size: cover;
+    font-size: 22px;
     }
+    #text-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    background-color: white;
+    color: #657863;
+    }
+    #text-span > h2 {
+        font-size: 50px;
+        width: 90%;
+        text-align: center;
+    }
+
 /* About */
     #about-hero {
-        background-image: url(./images/about-hero.jpg);
-        justify-content: center;
-        align-content: center;
-        color: white;
+    background-image: url(./images/about-hero2.jpg);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    height: 110vh;
+    padding-top: 20vh;
+    }
+    #about-hero > h2 {
+    padding-top: 3%;
+    width: 90%;
+    font-size: 50px;
     }
     #about-text {
         font-size: 55px;
@@ -90,42 +219,159 @@
         min-width: 300px;
         margin-top: 135px;
     }
+    #aboutpage-image {
+    background-image: url(./images/about-bottom2.jpg);
+    background-position: center;
+    height: auto;
+    width: 40%;
+    }
+    #about-section {
+    margin-top: 30px;
+    padding: 0px 5%;
+    color: #6B726C;
+    display: grid;
+    grid-template: repeat(5, 1fr) auto / repeat(2, 1fr);
+    grid-template-areas: 
+    "left-image right-text"
+    "left-image right-text"
+    "mid-text mid-text"
+    "left-text right-image"
+    "left-text right-image"
+    "bottom-text bottom-text"
+    ;
+    align-content: center;
+    justify-content: center;
+    justify-items: stretch;
+    font-size: 35px;
+    text-align: left;
+    }
+    .left-image { 
+        grid-area: left-image;
+        background-image: url(./images/about-kimono.jpg);
+        background-position: center;
+    }
+    .right-text {
+        grid-area: right-text;
+    }
+    .mid-text {
+        grid-area: mid-text;
+        text-align: center;
+        margin: auto;
+    }
+    .right-image {
+        grid-area: right-image;
+        background-image: url(./images/about-couple.jpg);
+        background-position: center;
+    }
+    .left-text {
+        grid-area: left-text;
+    }
+    .bottom-text-grid {
+        grid-area: bottom-text;
+    }
+    .bottom-text-grid > p {
+        margin: 10px 0px;
+    }
+    #about-section > article {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        margin: 5%;
+    }
+    #about-bottom-text {
+        font-size: 1rem;
+        flex-basis: 50%;
+        height: auto;
+    }
 /* Gallery */
     #gallery-hero {
         background-color: white;
         color: black;
-        height: 25vh;
+        height: unset;
+        padding: unset;
     }
     #gallery-section {
-        width: 100%;
-        height: 1000px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 30px 0px;
-        text-align: center;
+    padding-top: 20vh;
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
     }
     .gallery-text {
         font-size: 25px;
         text-align: center;
     }
+    #grid-container {
+    height: 70%;
+    width: 80%;
+    grid-gap: 1%;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-areas:
+        "top-left top-left top-left top-right"
+        "bottom-left bottom-left mid-right mid-right"
+        "bottom-left bottom-left bottom-right bottom-right";
+    }
+    #top-right { grid-area: top-right;
+        background-image: url("./images/top-right.jpg"); }
+    #mid-right { grid-area: mid-right; 
+        background-image: url("./images/mid-right.jpg");}
+    #bottom-right { grid-area: bottom-right;
+        background-image: url("./images/bottom-right.jpg");}
+    #top-left { grid-area: top-left;
+        background-image: url("./images/top-left.JPG");
+        background-position: center;}
+    #bottom-left { grid-area: bottom-left;
+        background-image: url("./images/bottom-left.jpg");
+        background-position: left;
+    }
+    .feature {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #gallery-cta {
+        font-weight: 300;
+    }
+    #gallery-cta:hover {
+        background-color: black;
+        color: white;
+    }
+
 /* Contact */
     #contact-hero {
         height: 200px;
         background-color: white;
         color: black;
+        height: unset;
+        padding: unset;
     }
     #contact-section {
-        height: 1200px;
-        margin: 0px 10%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
+    padding-top: 20vh;
+    height: 2000px;
+    margin: 0px 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    }
+    #contact-section > p {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0px;
     }
     #contact-instructions {
         font-size: 30px;
         align-self: center;
+    }
+    #contact-section > p {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0px;
     }
     form {
         height: 60%;
@@ -151,8 +397,199 @@
         margin-top: 90px;
         height: 85px;
     }
-    #contact-section > p {
+/* FAQ */
+    #faq-section {
+    padding-top: 20vh;
+    font-size: 25px;
+    color: #525B54;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 5%;
+    text-align: left;
+    }
+    #faq-section > article {
+        height: 80%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    article > p {
+        width: 100%;
+        margin: 2% 0px;
+    }
+
+/* Media Queries */
+    @media (max-width: 750px) {
+
+    .cta {
+        height: 50px;
+        width: 180px;
+        font-size: 20px;
+    }
+
+    /* Header */
+    #mobile-nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #first-icon-mobile {
+        margin: unset;
+    }
+    #mobile-logo {
+        width: 25%;
+    }
+    .toggle {
+        width: 7%;
+        height: 25%;
+        margin-top: 8%;
+    }
+    .active .line1 {
+        transform: rotate(-45deg) translate(-10px,8px);
+    }
+    .active .line3 {
+        transform: rotate(45deg) translate(-7px,-6px);
+    }
+    #home-hero {
+        justify-content: center;
+        padding-top: 20vh;
+        height: 70vh;
+        font-size: 30px;
         text-align: center;
+    }
+    #mission {
+        font-size: 50px;
+        padding-top: 5vh;
+    }
+
+    /* Main */
+    #text-span {
+        padding: 10px 1%;
+    }
+    #text-span > h2 {
+        font-size: 30px;
+    }
+    h2.main-text {
+        margin-bottom: 20px;
+    }
+    #about-hero > h2 {
         font-size: 25px;
-        margin: 50px 0px;
+    }
+    #gallery-section {
+        height: 2000px;
+    }
+    #grid-container, #about-section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    #about-section {
+        font-size: 25px;
+        height: unset;
+        width: unset;
+        padding: unset;
+        margin: 30px 1%;
+    }
+    #about-section > div {
+        width: 90%;
+        height: 600px;
+    }
+    #cta-section {
+        height: 1000px;
+        padding: unset;
+    }
+    .description {
+        font-size: 30px;
+    }
+    .feature {
+        width: 90%;
+        height: 20%;
+    }
+    #contact-section {
+        height: 2000px;
+        padding-top: 20vh;
+        margin: unset;
+    }
+    #contact-section > p {
+        font-size: inherit;
+    }
+    #contact-instructions {
+        height: unset;
+        width: unset;
+        font-size: 20px;
+    }
+    form, label, input, textarea {
+        gap: unset;
+        font-size: 20px;
+    }
+    input {
+        height: 5%;
+    }
+    textarea {
+        height: 10%;
+    }
+    form > .cta {
+        margin: unset;
+        height: 4%;
+        width: 60%;
+        font-size: inherit
+    }
+
+    /* Bottom */
+    .cta-section {
+        height: 1000px;
+        padding: 0px 1%;
+        flex-flow: column-reverse nowrap;
+        justify-content: space-evenly;
+    }
+    .section-image {
+        height: 400px;
+        width: 300px;
+    }
+    #final-cta {
+        width: 80%;
+        height: 40%;
+    }
+    footer {
+        height: 250px;
+    }
+    }
+    @media (max-width: 400px) {
+        * {
+            font-size: 20px;
+            overflow: scroll;
+        }
+        .gallery-text {
+            font-size: inherit;
+        }
+        article > p {
+            margin: 7% 0px;
+        }
+        #mobile-icons > a {
+            font-size: 25px;
+        }
+        span.header-nav-links {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        #about-text {
+            min-width: unset;
+            max-height: 500px;
+            font-size: 27px;
+            position: absolute;
+            bottom: 20px;
+            text-align: left;
+        }
+        form, label, input, textarea {
+            font-size: inherit;
+        }
+        footer nav.footer-list {
+            width: 70%;
+        }
     }

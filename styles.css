@@ -39,7 +39,7 @@ header {
     background-image: url(./images/real-hero.jpg);
     background-position: center;
     color: white;
-    height: 70vh;
+    height: 900px;
 }
 #about-hero {
     background-image: url(./images/about-hero2.jpg);
@@ -47,8 +47,7 @@ header {
     align-content: center;
     text-align: center;
     color: white;
-    font-size: 50px;
-    height: 70vh;
+    height: 110vh;
     padding-top: 20vh;
 }
 #gallery-hero, #contact-hero {
@@ -56,8 +55,8 @@ header {
     height: unset;
     padding: unset;
 }
-.title-link {
-    font-size: 50px;
+#about-hero > h2 {
+    font-size: 40px;
 }
 nav {
     display: flex;
@@ -155,7 +154,7 @@ a.fab, a.far {
 #about-hero > h2 {
     padding-top: 3%;
     width: 90%;
-    font-size: 5vw;
+    font-size: 50px;
 }
 #intro-section {
     height: 900px;
@@ -272,7 +271,8 @@ form > .cta {
         background-position: center;}
     #bottom-left { grid-area: bottom-left;
         background-image: url("./images/bottom-left.jpg");
-        background-position: left;}
+        background-position: left;
+    }
 
 .feature {
     width: 100%;
@@ -303,9 +303,6 @@ form > .cta {
 }
 .main-text {
     color: black;
-}
-#dough-image {
-    width: 100%;
 }
 
 /* Bottom */
@@ -413,7 +410,7 @@ form > .cta {
 
 /* Footer */
 footer {
-    height: 25vh;
+    height: 35vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
